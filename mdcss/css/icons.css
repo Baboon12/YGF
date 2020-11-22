@@ -1,0 +1,80 @@
+.ic{
+    /* border: 1px solid black; */
+    margin: 10px 10px 10px 10px;
+    /* margin: 0 auto; */
+}
+
+.icons{
+    display: flex;
+    position: relative;
+    top: 100%;
+    left: 85%;
+    transform: translate(-50%,-0%);
+}
+
+.icons li{
+    list-style: none;
+}
+
+.icons li a{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 85px;
+    font-size: 35px;
+    margin: 0 20px;
+    display: block;
+    position: relative;
+    overflow : hidden;
+    border-radius: 50%;
+    border: 3px solid black;
+    z-index: 1;
+}
+
+.icons li a .icon{
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+.icons li a:hover .icon{
+    color: rgb(164, 228, 61);
+    transform: rotateY(360deg);
+}
+
+.icons li a:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    transition: .5s;
+    z-index: 2;
+}
+
+.icons li a:hover:before{
+    top: 0;
+}
+
+.icons li:nth-child(1) a:before{
+    background: #ff0000; 
+}
+
+.icons li:nth-child(2) a:before{
+    background:  hsl(221, 100%, 48%);
+}
+
+.icons li:nth-child(3) a:before{
+    background-color: rgb(174, 0, 255);
+}
+
+/* #image{
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid grey;
+} */
