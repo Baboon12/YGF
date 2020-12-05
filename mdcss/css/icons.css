@@ -1,15 +1,20 @@
 .ic{
-    /* border: 1px solid black; */
-    margin: 10px 10px 10px 10px;
-    /* margin: 0 auto; */
+   /* border: 1px solid black; */  
+    margin: 0 auto;
+    position: relative;
 }
 
 .icons{
     display: flex;
-    position: relative;
-    top: 100%;
-    left: 85%;
-    transform: translate(-50%,-0%);
+    position: absolute;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-bottom: 70px;
+    z-index: 10;
+    left: 300px;
+    /* top: 100%; */
+    /* left: 10%;  */
+    /* transform: translate(-0%,-0%); */
 }
 
 .icons li{
@@ -23,7 +28,8 @@
     text-align: center;
     line-height: 85px;
     font-size: 35px;
-    margin: 0 20px;
+    margin: 20px 20px;
+    /* margin-bottom: 50px; */
     display: block;
     position: relative;
     overflow : hidden;
