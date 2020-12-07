@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./css/slicknav.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Compiled and minified CSS -->
@@ -98,8 +99,10 @@
                   <li><a href="./about.html">About</a></li>
                   <li><a href="./services.html">Services</a></li>
                   <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeo7nub_t3dn4j9mbx18QpiOuQISraJ35EWub7Lx6Ed5wHKmw/viewform" target="_blank">Internship</a></li>
-                  <li><a href="./contact.html">Contact Us</a></li>
+                  <li><a href="./webinar.html">Webinars</a></li>
                   <li><a href="./join.html">Join Us</a></li>
+                  <li><a href="./contact.html">Contact Us</a></li>
+                  <li><a href="https://ygfngo.org:2096/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Only For Employees">Sign In</a></li>
                 </ul>
               </div>
             </nav>
@@ -110,8 +113,10 @@
             <li><a href="./about.html">About</a></li>
             <li><a href="./services.html">Services</a></li>
             <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeo7nub_t3dn4j9mbx18QpiOuQISraJ35EWub7Lx6Ed5wHKmw/viewform" target="_blank">Internship</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./webinar.html">Webinars</a></li>
             <li><a href="./join.html">Join Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="https://ygfngo.org:2096/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Only For Employees">Sign In</a></li>
         </ul>
 
     <!-- slider_area_start -->
@@ -495,7 +500,7 @@
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/isotope.pkgd.min.js"></script>
     <script src="./js/ajax-form.js"></script>
-    <script src="./js/waypoints.min.js"></script>
+    <!-- <script src="./js/waypoints.min.js"></script> -->
     <script src="./js/jquery.counterup.min.js"></script>
     <script src="./js/imagesloaded.pkgd.min.js"></script>
     <script src="./js/scrollIt.js"></script>
@@ -519,9 +524,13 @@
            $('.sidenav').sidenav();
         });
         $(document).ready(function(){
-            $('.tooltipped').tooltip();
-        });
-      
+                 $('.tooltipped').tooltip({delay: 50});
+                 $('#select-beast').selectize({
+                    create: true,
+                    sortField: 'text'
+                 });
+            });
+
     </script>
 </body>
 

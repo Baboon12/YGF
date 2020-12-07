@@ -69,12 +69,14 @@
             <a class="navbar-brand" href="#">YGF</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeo7nub_t3dn4j9mbx18QpiOuQISraJ35EWub7Lx6Ed5wHKmw/viewform" target="_blank">Internship</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                    <li><a href="#">Join Us</a> </li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeo7nub_t3dn4j9mbx18QpiOuQISraJ35EWub7Lx6Ed5wHKmw/viewform" target="_blank">Internship</a></li>
+                <li><a href="./webinar.html">Webinars</a></li>
+                <li><a href="#">Join Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="https://ygfngo.org:2096/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Only For Employees">Sign In</a></li>
             </ul>
             </div>
         </nav>
@@ -85,7 +87,10 @@
         <li><a href="./about.html">About</a></li>
         <li><a href="./services.html">Services</a></li>
         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeo7nub_t3dn4j9mbx18QpiOuQISraJ35EWub7Lx6Ed5wHKmw/viewform" target="_blank">Internship</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="./webinar.html">Webinars</a></li>
+        <li><a href="#">Join Us</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="https://ygfngo.org:2096/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Only For Employees">Sign In</a></li>
     </ul>
 
     <h1 class="center-align"> <b>Join YGF NGO</b>
@@ -140,6 +145,14 @@
     <script>
         $(document).ready(function(){
             $('.sidenav').sidenav();
+        });
+
+        $(document).ready(function(){
+            $('.tooltipped').tooltip({delay: 50});
+            $('#select-beast').selectize({
+                create: true,
+                sortField: 'text'
+            });
         });
      </script>
 
